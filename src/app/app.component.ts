@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  odd: number[] = [];
+  even: number[] = [];
+
+  onIncrement(event) {
+	event.count % 2 == 0
+	  ? this.even.push(event.count)
+	    : this.odd.push(event.count);
+  }
 }

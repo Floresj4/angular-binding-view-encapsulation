@@ -1,10 +1,17 @@
 <div class='container'>
-	<app-game-controller></app-game-controller>
+	<app-game-controller (counterIncremented)="onIncrement($event)"></app-game-controller>
 	
 	<div class='row'>
 		<div class='col-md-6'>
-			<app-odd-container-component></app-odd-container-component>
+			<div class='row'>
+				<h4>Odd Numbers</h4>
+				<app-odd-container-component
+				  [data-value]="odd">
+				</app-odd-container-component>
+			</div>
 		</div>
-		<div class='col-md-6'></div>
+		
+		<div class='col-md-6'>
+		</div>
 	</div>
 </div>

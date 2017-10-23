@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-game-controller',
@@ -10,16 +10,22 @@ export class GameControllerComponent implements OnInit {
   count: number = 0;
   intervalId: number;
   
+  @Output() counterIncremented = new EventEmitter<{count: number}>();
+  
   constructor() { }
+
+  isRunning() {
+    return this.intervalId !== null;
+  }
 
   ngOnInit() {
   }
   
   onStartCounter() {
-    //set interval and capture id to clear later
+    //set interval which emits the incremented count
     this.intervalId = setInterval(() => {
-	  this.count++;
-	  console.log(this.count);
+	  console.log(++this.count);
+	  this.counterIncremented.emit({count: this.count});
 	}, 1000);
   }
   
