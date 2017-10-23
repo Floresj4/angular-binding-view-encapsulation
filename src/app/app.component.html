@@ -16,6 +16,10 @@
 			<div class='row'>
 			  <app-even-container-component
                 [data-value]="even">
+				  <div *ngFor="let d of even"
+                    class='col-xs-2 col-sm-2 number-block'>
+                      {{ d }}
+                  </div>
 			  </app-even-container-component>
 			</div>
 		</div>
