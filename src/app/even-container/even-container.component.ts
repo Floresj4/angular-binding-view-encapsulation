@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-even-container-component',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./even-container.component.css']
 })
 export class EvenContainerComponent {
+
+  @Input('data-value') data:number[] = [];
+  
   ngOnInit() {
   
   }
