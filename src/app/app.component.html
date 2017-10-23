@@ -1,9 +1,11 @@
 <div class='container'>
-	<app-game-controller (counterIncremented)="onIncrement($event)">
-	</app-game-controller>
+	<div class='row'>
+	  <app-game-controller (counterIncremented)="onIncrement($event)">
+	  </app-game-controller>
+	</div>
 	
 	<div class='row'>
-		<div class='col-xs-12 col-sm-6'>
+		<div class='col-xs-6'>
 			<div class='row'>
 				<h4>Odd Numbers</h4>
 				<app-odd-container-component
@@ -12,7 +14,7 @@
 			</div>
 		</div>
 		
-		<div class='col-xs-12 col-sm-6'>
+		<div class='col-xs-6'>
 			<div class='row'>
 			  <app-even-container-component
                 [data-value]="even">
