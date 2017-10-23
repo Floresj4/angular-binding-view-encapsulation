@@ -7,8 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EvenContainerComponent {
 
-  @Input('data-value') data:number[] = [];
+  @Input('data-value') data: { count: number };
   
+  constructor() {
+  
+  }
+
   ngOnInit() {
   
   }
