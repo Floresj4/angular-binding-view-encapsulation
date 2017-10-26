@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".media-object {\r\n\twidth:125px;\r\n}", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class='container'>\r\n\t<div class='row'>\r\n\t  <app-game-controller (counterIncremented)=\"onIncrement($event)\">\r\n\t  </app-game-controller>\r\n\t</div>\r\n\t\r\n\t<div class='row'>\r\n\t\t<div class='col-xs-6'>\r\n\t\t\t<div class='row'>\r\n\t\t\t\t<h4>Odd Numbers</h4>\r\n\t\t\t\t<app-odd-container-component\r\n\t\t\t\t  [data-value]=\"odd\">\r\n\t\t\t\t</app-odd-container-component>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t\r\n\t\t<div class='col-xs-6'>\r\n\t\t\t<div class='row'>\r\n\t\t\t  <app-even-container-component>\r\n\t\t\t\t  <div *ngFor=\"let d of even\"\r\n                    class='col-xs-2 col-sm-2 number-block'>\r\n                      {{ d }}\r\n                  </div>\r\n\t\t\t  </app-even-container-component>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "<div class='container'>\r\n\t<div class='row' style='margin-top:20px;'>\r\n\t\t<div class='col-xs-12'>\r\n\t\t\t<a href='https://www.udemy.com/the-complete-guide-to-angular-2' target='blank' class='list-group-item clearfix' >\r\n\t\t\t\t<div class='pull-left'>\r\n\t\t\t\t\t<h4 class='list-group-item-heading'>Angular Binding &amp; View Encapsulation</h4>\r\n\t\t\t\t\t<p class='list-group-item-text'>Section 5 (Components &amp; Databinding Deep Dive) exercise of Angular4 - The Complete Guide on udemy.com</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<span class='pull-right'>\r\n\t\t\t\t\t<img src='https://udemy-images.udemy.com/course/480x270/756150_c033_2.jpg'\r\n\t\t\t\t\t\t alt='udemy' \r\n\t\t\t\t\t\t class='img-responsive' \r\n\t\t\t\t\t\t style='max-height: 75px' />\r\n\t\t\t\t</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t</div>\r\n\t\r\n\t<app-game-controller (counterIncremented)=\"onIncrement($event)\"></app-game-controller>\r\n\r\n\t<div class='row'>\r\n\r\n\t\t<div class='col-xs-6'>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">Odd Numbers</div>\r\n\t\t\t\t<div class=\"panel-body\">\r\n\r\n\t\t\t\t\t<app-odd-container-component [data-value]=\"odd\">\r\n\t\t\t\t\t</app-odd-container-component>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t  \r\n\t\t</div>\r\n\r\n\t\t<div class='col-xs-6'>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">Even Numbers</div>\r\n\t\t\t\t<div class=\"panel-body\">\r\n\t\t\t\t\t<app-even-container-component>\r\n\t\t\t\t\t\t<div *ngFor=\"let d of even\"\r\n\t\t\t\t\t\t\t class='col-xs-2 col-sm-2 number-block'>\r\n\t\t\t\t\t\t\t{{ d }}\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</app-even-container-component>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
@@ -149,7 +149,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/even-container/even-container.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h4>Even Component</h4>\r\n<ng-content></ng-content>"
+module.exports = "<ng-content></ng-content>"
 
 /***/ }),
 
@@ -211,7 +211,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/game-controller/game-controller.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class='row'>\n\t<div class='col-md-12'>\n\t\t<h4>Number Controller</h4>\n\t</div>\n</div>\n<div class='row'>\n\t<div class='col-md-12'>\n\t\t<button\n\t\t\tclass='btn btn-success'\n\t\t\t(click)=\"onStartCounter()\">Start</button>\n\t\t<button\n\t\t\tclass='btn btn-danger'\n\t\t\t(click)=\"onStopCounter()\">Stop</button>\n\t</div>\n</div>"
+module.exports = "<div class='panel panel-default top-margin'>\n\t<div class='panel-body'>\n\t\t<button\n\t\t\tclass='btn btn-success'\n\t\t\t(click)=\"onStartCounter()\">Start</button>\n\t\t<button\n\t\t\tclass='btn btn-danger'\n\t\t\t(click)=\"onStopCounter()\">Stop</button>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -279,7 +279,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".number-block {\r\n\tbackground-color:#ff4000;\r\n\tcolor:#fff;\r\n\tborder-radius:5px;\r\n\tborder: 1px solid #000;\r\n\tmargin-right:5px;\r\n\tmargin-bottom:5px;\r\n\ttext-align:center;\r\n}", ""]);
+exports.push([module.i, ".number-block {\r\n\tcolor:#fff;\r\n\tborder-radius:4px;\r\n\tborder: 1px solid #eea236;;\r\n\tbackground-color: #f0ad4e;\r\n\tmargin-right:5px;\r\n\tmargin-bottom:5px;\r\n\ttext-align:center;\r\n\tpadding:2px 0;\r\n}", ""]);
 
 // exports
 
