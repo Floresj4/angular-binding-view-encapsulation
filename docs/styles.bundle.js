@@ -97,7 +97,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n.number-block {\r\n\tcolor:#fff;\r\n\tborder-radius:5px;\r\n\tborder: 1px solid #269abc;\r\n\tbackground-color: #31b0d5;\r\n\tmargin-right:5px;\r\n\tmargin-bottom:5px;\r\n\ttext-align:center;\r\n\tpadding:2px 0;\r\n}\r\n\r\n.top-margin {\r\n\tmargin-top:20px;\r\n}", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n.number-block {\r\n\tcolor:#fff;\r\n\tborder-radius:5px;\r\n\tborder: 1px solid #269abc;\r\n\tbackground-color: #31b0d5;\r\n\tmargin-right:5px;\r\n\tmargin-bottom:5px;\r\n\ttext-align:center;\r\n\tpadding:2px 0;\r\n}\r\n\r\n.top-margin {\r\n\tmargin-top:20px;\r\n}\r\n\r\n.well-link {\r\n\twidth:30px;\r\n}\r\n\r\n.list-group a:hover {\r\n\tcolor:cornflowerblue;\r\n}\r\n\r\n.list-group a:hover > span {\r\n\tcolor:#000;\r\n}", ""]);
 
 // exports
 
