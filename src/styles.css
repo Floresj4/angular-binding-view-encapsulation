@@ -13,3 +13,15 @@
 .top-margin {
 	margin-top:20px;
 }
+
+.well-link {
+	width:30px;
+}
+
+.list-group a:hover {
+	color:cornflowerblue;
+}
+
+.list-group a:hover > span {
+	color:#000;
+}
