@@ -245,7 +245,7 @@ var GameControllerComponent = (function () {
         var _this = this;
         // set interval which emits the incremented count
         this.intervalId = setInterval(function () {
-            _this.counterIncremented.emit({ count: _this.count });
+            _this.counterIncremented.emit({ count: _this.count++ });
         }, 1000);
     };
     GameControllerComponent.prototype.onStopCounter = function () {

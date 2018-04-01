@@ -27,7 +27,7 @@ export class GameControllerComponent implements OnInit {
     this.intervalId = setInterval(() => {
 
     this.counterIncremented.emit(
-      {count: this.count});
+      {count: this.count++});
     }, 1000);
   }
 
