@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class='container'>\r\n\t<div class='row' style='margin-top:20px;'>\r\n\t\t<div class='col-xs-12'>\r\n\t\t\t<a href='https://www.udemy.com/the-complete-guide-to-angular-2' target='blank' class='list-group-item clearfix' >\r\n\t\t\t\t<div class='pull-left'>\r\n\t\t\t\t\t<h4 class='list-group-item-heading'>Angular Binding &amp; View Encapsulation</h4>\r\n\t\t\t\t\t<p class='list-group-item-text'>Section 5 (Components &amp; Databinding Deep Dive) exercise of Angular4 - The Complete Guide on udemy.com</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<span class='pull-right'>\r\n\t\t\t\t\t<img src='https://udemy-images.udemy.com/course/480x270/756150_c033_2.jpg'\r\n\t\t\t\t\t\t alt='udemy' \r\n\t\t\t\t\t\t class='img-responsive' \r\n\t\t\t\t\t\t style='max-height: 75px' />\r\n\t\t\t\t</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t</div>\r\n\t\r\n\t<app-game-controller (counterIncremented)=\"onIncrement($event)\"></app-game-controller>\r\n\r\n\t<div class='row'>\r\n\r\n\t\t<div class='col-xs-6'>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">Odd Numbers</div>\r\n\t\t\t\t<div class=\"panel-body\">\r\n\r\n\t\t\t\t\t<app-odd-container-component [data-value]=\"odd\">\r\n\t\t\t\t\t</app-odd-container-component>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t  \r\n\t\t</div>\r\n\r\n\t\t<div class='col-xs-6'>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">Even Numbers</div>\r\n\t\t\t\t<div class=\"panel-body\">\r\n\t\t\t\t\t<app-even-container-component>\r\n\t\t\t\t\t\t<div *ngFor=\"let d of even\"\r\n\t\t\t\t\t\t\t class='col-xs-2 col-sm-2 number-block'>\r\n\t\t\t\t\t\t\t{{ d }}\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</app-even-container-component>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t\r\n\t<div class='list-group'>\r\n\t\t<a class='list-group-item' href='https://floresj4.github.io/'>\r\n\t\t\t<span class='glyphicon glyphicon-home'></span> &nbsp; floresj4.github.io</a>\r\n\t\t<a class='list-group-item' href='https://github.com/Floresj4/angular-binding-view-encapsulation'>\r\n\t\t\t<span class='glyphicon glyphicon-console'></span> &nbsp; https://github.com/Floresj4/angular-binding-view-encapsulation</a>\r\n\t</div>\r\n\t\t \r\n</div>"
+module.exports = "<div class='container'>\r\n\r\n  <div class='page-header'>\r\n    <h4>Angular Binding &amp; View Encapsulation</h4>\r\n  </div>\r\n\r\n\t<app-game-controller (counterIncremented)=\"onIncrement($event)\"></app-game-controller>\r\n\r\n\t<div class='row'>\r\n\r\n\t\t<div class='col-xs-6'>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">Odd Numbers</div>\r\n\t\t\t\t<div class=\"panel-body\">\r\n\r\n\t\t\t\t\t<app-odd-container-component [data-value]=\"odd\">\r\n\t\t\t\t\t</app-odd-container-component>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\r\n\t\t<div class='col-xs-6'>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">Even Numbers</div>\r\n\t\t\t\t<div class=\"panel-body\">\r\n\t\t\t\t\t<app-even-container-component>\r\n\t\t\t\t\t\t<div *ngFor=\"let d of even\"\r\n\t\t\t\t\t\t\t class='col-xs-2 col-sm-2 number-block'>\r\n\t\t\t\t\t\t\t{{ d }}\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</app-even-container-component>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\r\n\t<div class='list-group'>\r\n\t\t<a class='list-group-item' href='https://floresj4.github.io/'>\r\n\t\t\t<span class='glyphicon glyphicon-home'></span> &nbsp; floresj4.github.io</a>\r\n\t\t<a class='list-group-item' href='https://github.com/Floresj4/angular-binding-view-encapsulation'>\r\n\t\t\t<span class='glyphicon glyphicon-console'></span> &nbsp; https://github.com/Floresj4/angular-binding-view-encapsulation</a>\r\n\t</div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -211,7 +211,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/game-controller/game-controller.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class='panel panel-default top-margin'>\n\t<div class='panel-body'>\n\t\t<button\n\t\t\tclass='btn btn-success'\n\t\t\t(click)=\"onStartCounter()\">Start</button>\n\t\t<button\n\t\t\tclass='btn btn-danger'\n\t\t\t(click)=\"onStopCounter()\">Stop</button>\n\t</div>\n</div>"
+module.exports = "<div class='panel panel-default top-margin'>\n\t<div class='panel-body'>\n\t\t<button\n\t\t\tclass='btn btn-success'\n\t\t\t(click)=\"onStartCounter()\"\n      [disabled]=\"isRunning()\">Start</button>\n\t\t<button\n\t\t\tclass='btn btn-danger'\n\t\t\t(click)=\"onStopCounter()\">Stop</button>\n\t</div>\n</div>\n"
 
 /***/ }),
 
@@ -233,24 +233,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var GameControllerComponent = (function () {
     function GameControllerComponent() {
-        this.count = 0;
         this.counterIncremented = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
     }
     GameControllerComponent.prototype.isRunning = function () {
-        return this.intervalId !== null;
+        return this.intervalId !== undefined;
     };
     GameControllerComponent.prototype.ngOnInit = function () {
+        this.count = 0;
     };
     GameControllerComponent.prototype.onStartCounter = function () {
         var _this = this;
-        //set interval which emits the incremented count
+        // set interval which emits the incremented count
         this.intervalId = setInterval(function () {
-            console.log(++_this.count);
             _this.counterIncremented.emit({ count: _this.count });
         }, 1000);
     };
     GameControllerComponent.prototype.onStopCounter = function () {
         clearInterval(this.intervalId);
+        this.intervalId = undefined;
     };
     return GameControllerComponent;
 }());
