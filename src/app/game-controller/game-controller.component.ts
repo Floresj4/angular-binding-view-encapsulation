@@ -7,29 +7,32 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class GameControllerComponent implements OnInit {
 
-  count: number = 0;
+  count: number;
   intervalId: number;
-  
+
   @Output() counterIncremented = new EventEmitter<{count: number}>();
-  
+
   constructor() { }
 
   isRunning() {
-    return this.intervalId !== null;
+    return this.intervalId !== undefined;
   }
 
   ngOnInit() {
+    this.count = 0;
   }
-  
+
   onStartCounter() {
-    //set interval which emits the incremented count
+    // set interval which emits the incremented count
     this.intervalId = setInterval(() => {
-	  console.log(++this.count);
-	  this.counterIncremented.emit({count: this.count});
-	}, 1000);
+
+    this.counterIncremented.emit(
+      {count: this.count});
+    }, 1000);
   }
-  
+
   onStopCounter() {
     clearInterval(this.intervalId);
+    this.intervalId = undefined;
   }
 }

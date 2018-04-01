@@ -2,7 +2,8 @@
 	<div class='panel-body'>
 		<button
 			class='btn btn-success'
-			(click)="onStartCounter()">Start</button>
+			(click)="onStartCounter()"
+      [disabled]="isRunning()">Start</button>
 		<button
 			class='btn btn-danger'
 			(click)="onStopCounter()">Stop</button>
